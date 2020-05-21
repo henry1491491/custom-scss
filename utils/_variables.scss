@@ -18,8 +18,26 @@ $spacers: (
   5: $spacer * 3,
 ) ;
 
-// color
+$line-height: (
+ 1: 1,
+ 2: 1.25,
+ 3: 1.5,
+ 4: 1.75,
+ 5: 2,
+ 6: 2.25,
+ 7: 2.5,
+ 8: 2.75,
+ 9: 3,
+ 10: 3.25,
+ 11: 3.5,
+ 12: 3.75,
+ 13: 4,
+ 14: 4.25,
+ 15: 4.5,
+ 16: 4.75,
+);
 
+// color
 $primary: #1d3557;
 $success: #a8dadc;
 $secondary: #457b9d;
@@ -28,6 +46,7 @@ $warning: #f1faee;
 
 $description: #ddd;
 $title: #3c3c3c;
+
 
 $dark-colors: (
   primary: $primary,
@@ -42,9 +61,12 @@ $light-colors: (
   description:$description,
 );
 
-
-// color-layout
-$bg-body:$warning;
-
 // border-radius
 $border-radius: 3px;
+
+// responsive
+$xs-media:320px;
+$sm-media: 576px;
+$md-media: 768px;
+$lg-media: 992px;
+$xl-media:1200px;

@@ -1,25 +1,7 @@
 @import './variables';
 
-// color 
-@each $key, $value in $dark-colors {
-  .text--#{ $key } {
-    color: $value;
-  }
-}
-@each $key, $value in $light-colors {
-  .text--#{ $key } {
-    color: $value;
-  }
-}
-
-// divide
-.divider {
-  width: 85%;
-
-  color: $description;
-}
-
-// flex
+// position
+/// flex
 .d-flex {
   display: flex;
 }
@@ -34,19 +16,7 @@
   align-items: center;
 }
 
-// float
-.text--fr {
-  float: right;
-}
-.text--fl {
-  float: left;
-}
-// text decoration
-.text--border--b {
-  border-bottom: 1px solid #000;
-}
-
-// text position
+/// align
 .text--right {
   text-align: right;
 }
@@ -59,20 +29,17 @@
   text-align: left;
 }
 
-// bg-color 
-@each $key, $value in $dark-colors {
-  .bg--#{ $key } {
-    background-color: $value;
-  }
+/// float
+.text--fr {
+  float: right;
+}
+.text--fl {
+  float: left;
 }
 
-@each $key, $value in $light-colors {
-  .bg--#{ $key } {
-    background-color: $value;
-  }
-}
 
-// margin
+// spacing
+/// margin
 .ml--auto {
   margin-left: auto;
 }
@@ -133,7 +100,7 @@
   }
 }
 
-// padding
+/// padding
 .pl--auto {
   padding-left: auto;
 }
@@ -184,4 +151,66 @@
   .pa--#{ $key } {
     padding: $value;
   }
+}
+
+// typography 
+/// font
+@for  $i from 1 through 9 {
+  .font--#{ $i * 100} {
+    font-weight: #{$i * 100};
+  }
+}
+
+@each $key, $value in $line-height {
+  .lineHeight--#{ $key } {
+    line-height: #{ $value };
+  }
+}
+
+@for $i from 1 to 100 {
+  .letterSpacing--#{ $i } {
+    letter-spacing: #{ $i }px;
+  }
+}
+
+
+/// decoration
+.text--border--b {
+  border-bottom: 1px solid #000;
+}
+
+
+
+// color
+/// text 
+@each $key, $value in $dark-colors {
+  .text--#{ $key } {
+    color: $value;
+  }
+}
+@each $key, $value in $light-colors {
+  .text--#{ $key } {
+    color: $value;
+  }
+}
+
+/// background 
+@each $key, $value in $dark-colors {
+  .bg--#{ $key } {
+    background-color: $value;
+  }
+}
+
+@each $key, $value in $light-colors {
+  .bg--#{ $key } {
+    background-color: $value;
+  }
+}
+
+// others
+/// divide
+.divider {
+  width: 85%;
+
+  color: $description;
 }
