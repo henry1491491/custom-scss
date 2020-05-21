@@ -1,0 +1,30 @@
+// 做出不同行數的 list-item
+
+.list {
+  width: 200px;
+  .list__item {
+    padding: .3rem 1rem;
+    &:hover {
+      background-color: $description;
+    }
+  }
+
+  .list__item--active {
+    background-color:$description;
+  }
+
+  .list__item--group {
+    cursor: pointer;
+  }
+
+  .list__item--title {
+    font-size: $h6-font-size * .9;
+    font-weight: 500;
+
+    color: $title;
+    &:hover {
+      background-color: $warning;
+    }
+  }
+
+}

@@ -1,0 +1,81 @@
+@import '../utils/variables';
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: $font-size-base;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+h2 {
+  font-size: $h2-font-size;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+h4 {
+  font-size: $h4-font-size;
+}
+h5 {
+  font-size: $h5-font-size;
+}
+h6 {
+  font-size: $h6-font-size;
+}
+
+// 常見樣式
+
+.title {
+  font-size: $h1-font-size;
+}
+
+.subTitle {
+  font-size: $h4-font-size;
+}
+
+.article {
+  font-size: $h6-font-size;
+}
+
+.description {
+  font-size: $h6-font-size * .8;
+}
+
+
+@for $i from 1 through 9 {
+  .font--#{ $i * 100} {
+    font-weight: #{$i * 100};
+  }
+}
+
+$line-height: (
+ 1: 1,
+ 2: 1.25,
+ 3: 1.5,
+ 4: 1.75,
+ 5: 2,
+ 6: 2.25,
+ 7: 2.5,
+ 8: 2.75,
+ 9: 3,
+ 10: 3.25,
+ 11: 3.5,
+ 12: 3.75,
+ 13: 4,
+ 14: 4.25,
+ 15: 4.5,
+ 16: 4.75,
+);
+
+@each $key, $value in $line-height {
+  .lineHeight--#{ $key } {
+    line-height: #{ $value };
+  }
+}
+
+@for $i from 1 to 100 {
+  .letterSpacing--#{ $i } {
+    letter-spacing: #{ $i }px;
+  }
+}
+

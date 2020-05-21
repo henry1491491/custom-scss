@@ -1,0 +1,36 @@
+@import '../utils/variables';
+.button {
+  padding: .3rem 1rem;
+  font-size:$h6-font-size;
+  border: 1px solid #ddd;
+  border-radius: $border-radius;
+  background-color: $primary;
+  color:#fff;
+}
+
+.button--block {
+  width: 100%;
+}
+
+.button__group {
+  display: flex;
+  align-items: center;
+}
+
+.button__group--two {
+
+}
+
+
+@each $key, $value in $dark-colors {
+  .button--#{$key} {
+    background-color: $value;
+    color:#fff;
+  }
+}
+@each $key, $value in $light-colors {
+  .button--#{$key} {
+    background-color: $value;
+    color:#000;
+  }
+}

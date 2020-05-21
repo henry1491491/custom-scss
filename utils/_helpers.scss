@@ -1,0 +1,187 @@
+@import './variables';
+
+// color 
+@each $key, $value in $dark-colors {
+  .text--#{ $key } {
+    color: $value;
+  }
+}
+@each $key, $value in $light-colors {
+  .text--#{ $key } {
+    color: $value;
+  }
+}
+
+// divide
+.divider {
+  width: 85%;
+
+  color: $description;
+}
+
+// flex
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+
+// float
+.text--fr {
+  float: right;
+}
+.text--fl {
+  float: left;
+}
+// text decoration
+.text--border--b {
+  border-bottom: 1px solid #000;
+}
+
+// text position
+.text--right {
+  text-align: right;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--left {
+  text-align: left;
+}
+
+// bg-color 
+@each $key, $value in $dark-colors {
+  .bg--#{ $key } {
+    background-color: $value;
+  }
+}
+
+@each $key, $value in $light-colors {
+  .bg--#{ $key } {
+    background-color: $value;
+  }
+}
+
+// margin
+.ml--auto {
+  margin-left: auto;
+}
+
+.mr--auto {
+  margin-right: auto;
+}
+
+.mt--auto {
+  margin-top: auto;
+}
+
+.mb--auto {
+  margin-bottom: auto;
+}
+
+@each $key, $value in $spacers {
+  .mt--#{ $key } {
+    margin-top: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .ml--#{ $key } {
+    margin-left: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .mr--#{ $key } {
+    margin-right: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .mb--#{ $key } {
+    margin-bottom: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .mx--#{ $key } {
+    margin-right: $value;
+    margin-left: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .my--#{ $key } {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .ma--#{ $key } {
+    margin: $value;
+  }
+}
+
+// padding
+.pl--auto {
+  padding-left: auto;
+}
+
+.pr--auto {
+  padding-right: auto;
+}
+
+@each $key, $value in $spacers {
+  .pt--#{ $key } {
+    padding-top: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .ml--#{ $key } {
+    margin-left: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .pr--#{ $key } {
+    padding-right: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .pb--#{ $key } {
+    padding-bottom: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .px--#{ $key } {
+    padding-right: $value;
+    padding-left: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .py--#{ $key } {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+@each $key, $value in $spacers {
+  .pa--#{ $key } {
+    padding: $value;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../utils/variables";
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 1rem;
+
+  .card__body {
+    padding: 1rem;
+  }
+
+  .card__body__title {
+    padding: .5rem 0;
+    font-size: $h4-font-size;
+  }
+  .card__body__text {
+    padding: .5rem 0;
+    font-size: $h6-font-size;
+  }
+}
+
+.card--pure {
+  background-color:$bg-body;
+  border: none;
+}

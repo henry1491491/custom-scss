@@ -1,0 +1,19 @@
+@import "../utils/variables"; // 引入變數時機？
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-body;
+  overflow:hidden; // 使用時機？
+}
+
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
